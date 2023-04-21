@@ -18,7 +18,7 @@
                 $prn = $_POST['exampleFormControlInput1'];
                 $email = $_POST['exampleFormControlInput2'];
 
-                $sql = "INSERT INTO crud VALUES('{$prn}','{$email}')";
+                $sql = "INSERT INTO crud(prn,email) VALUES('{$prn}','{$email}')";
 
                 $result = mysqli_query($conn,$sql);
 
